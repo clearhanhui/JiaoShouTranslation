@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_drawer">
+
+    <RelativeLayout
+        android:id="@+id/ll_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation = "vertical">
+
+
+        <com.hanhui.jiaoshoutranslation.PagerSlidingTabStrip
+            android:id="@+id/m_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            app:pstsIndicatorColor="@color/Google_blue"
+            app:pstsIndicatorHeight="2dp"
+            app:pstsShouldExpand="true"
+            app:pstsUnderlineColor="#fafafa"
+            app:pstsUnderlineHeight="1.5dp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/m_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/m_tabs"
+            android:layout_below="@+id/ll_func"/>
+        <LinearLayout
+            android:id="@+id/ll_func"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_menu"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:padding="5dp"
+                android:layout_width="32dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_menu" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_left"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:background="#009fc3"
+        android:orientation="vertical"
+        android:layout_gravity="left">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="21dp"
+            android:gravity="center"
+            android:text="叫兽翻译"
+            android:layout_marginTop="41dp"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"/>
+
+        <Button
+            android:id="@+id/btn_01"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/button_menu_item"
+            android:text="   翻译"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+
+        <Button
+            android:id="@+id/btn_02"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/button_menu_item"
+            android:text="   鸡汤"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+
+        <Button
+            android:id="@+id/btn_03"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/button_menu_item"
+            android:text="   新闻"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+
+        <Button
+            android:id="@+id/btn_04"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/button_menu_item"
+            android:text="   参考"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

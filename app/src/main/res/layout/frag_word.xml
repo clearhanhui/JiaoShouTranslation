@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/et_word_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textSize="22sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_word_translate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_test02"
+            android:text="翻译"
+            android:textSize="15sp"
+            android:textColor="@drawable/button_text_color"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+
+        <Button
+            android:id="@+id/btn_word_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_test02"
+            android:text="清空"
+            android:textSize="15sp"
+            android:textColor="@drawable/button_text_color"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/sp_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/Google_blue"
+        android:popupBackground="@drawable/button_test02"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+        <Button
+            android:id="@+id/btn_am"
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_margin="15dp"
+            android:visibility="invisible"
+            android:background="@drawable/buttton_music" />
+        <TextView
+            android:id="@+id/tv_am"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_am"
+            android:layout_alignTop="@id/btn_am"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/btn_em"
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:layout_below="@id/btn_am"
+            android:layout_alignLeft="@id/btn_am"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:visibility="invisible"
+            android:background="@drawable/buttton_music" />
+        <TextView
+            android:id="@+id/tv_em"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_em"
+            android:layout_alignTop="@id/btn_em"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/tv_word_output"
+            android:layout_below="@id/tv_em"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:textIsSelectable="true"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_word_output02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:textIsSelectable="true"
+            android:textSize="18sp" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_wd_start"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:background="@drawable/button_wordsound_start"-->
+        <!--/>-->
+
+</LinearLayout>
