@@ -1,5 +1,7 @@
 # JiaoShouDictionary
+
 2017暑期实习项目，基于金山词霸API、百度翻译API、CNN新闻API的英语词典
+
 ---
 ### 功能：
 * 单词英汉互译、获取发音
