@@ -19,3 +19,6 @@ This is 2017 summer internship program, a dictionary based on Kingsoft PowerWord
 * 获取CNN每日新闻十则
 
 :smile:
+
+![1](https://github.com/forphan/pic/blob/master/JiaoShouTransaction/transla.jpg)
+![2](https://github.com/forphan/pic/blob/master/JiaoShouTransaction/menu.jpg)
