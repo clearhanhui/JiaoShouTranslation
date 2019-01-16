@@ -1,4 +1,4 @@
-# JiaoShouDictionary
+# JiaoShouTranslation
 This is 2017 summer internship program, a dictionary based on Kingsoft PowerWord API, Baidu Translation API, CNN News API.
 
 ### Features:
@@ -9,7 +9,7 @@ This is 2017 summer internship program, a dictionary based on Kingsoft PowerWord
 
 ---
 
-# 叫兽词典
+# 叫兽翻译
 2017暑期实习项目，基于金山词霸API、百度翻译API、CNN新闻API的英语词典
 
 ### 功能：
