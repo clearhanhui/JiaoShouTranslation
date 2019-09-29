@@ -20,8 +20,8 @@ This is 2017 summer internship program, a dictionary based on Kingsoft PowerWord
 
 :smile:
 
-<img src="https://github.com/forphan/pic/blob/master/JiaoShouTransaction/transla.jpg" width = "216" height = "432" alt="image-1" align=center />
-<img src="https://github.com/forphan/pic/blob/master/JiaoShouTransaction/menu.jpg" width = "216" height = "432" alt="image-2" align=center />
+<img src="https://github.com/forphan/pic/blob/master/JiaoShouTransaction/transla.jpg" width="30%" height="30%" alt="image-1" align=center />
+<img src="https://github.com/forphan/pic/blob/master/JiaoShouTransaction/menu.jpg" width="30%" height="30%" alt="image-2" align=center />
 
 ---
 2019.9更新 修复了双击翻译按钮闪退bug
