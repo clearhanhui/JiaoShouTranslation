@@ -19,6 +19,7 @@ This is 2017 summer internship program, a dictionary based on Kingsoft PowerWord
 * 获取CNN每日新闻十则
 
 :smile:
+
 <img src="https://github.com/forphan/pic/blob/master/JiaoShouTransaction/menu.jpg" width="30%" height="30%" alt="image-2" align=center />
 
 ---
