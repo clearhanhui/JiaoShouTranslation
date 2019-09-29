@@ -22,11 +22,13 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import com.hanhui.jiaoshoutranslation.baidu.JsonRootBean;
 import com.google.gson.Gson;
+import com.hanhui.jiaoshoutranslation.baidu.Trans_result;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
@@ -60,6 +62,8 @@ public class SentenceFragment extends Fragment {
     EditText et_stc;
     Button btn_exg;
     boolean flag = false;
+    //List<Trans_result> list = new ArrayList<>();
+    List<String> list = new ArrayList<>();
 
 
     @SuppressLint("HandlerLeak")
@@ -70,9 +74,16 @@ public class SentenceFragment extends Fragment {
                 String string = (String) msg.obj;
                 //Log.i("dddddddd", "handleMessage============: "+string);
                 Gson gson = new Gson();
-                com.hanhui.jiaoshoutranslation.baidu.JsonRootBean bean = gson.fromJson(string,com.hanhui.jiaoshoutranslation.baidu.JsonRootBean.class);
-                List<com.hanhui.jiaoshoutranslation.baidu.Trans_result> list = bean.getTrans_result();
-                tv.setText(list.get(0).getDst());
+                JsonRootBean bean = gson.fromJson(string,JsonRootBean.class);
+
+                // 解决了闪退的bug，但是稍微影响性能
+                if (!bean.getTrans_result().isEmpty()) {
+                    if (list.size() > 20) {
+                        list.clear();
+                    }
+                    list.add(bean.getTrans_result().get(0).getDst());
+                    tv.setText(list.get(list.size() - 1));
+                }
             }
         }
     };
@@ -249,7 +260,7 @@ public class SentenceFragment extends Fragment {
                 }
                 //int f = sp_stc_from.getId();
                 //int t = sp_stc_to.getId();
-                Log.i("dddddd", t+"onClick:+=+=+=+== "+f);
+                //Log.i("dddddd", t+"onClick:+=+=+=+== "+f);
                 sp_stc_from.setSelection(t,true);
                 sp_stc_to.setSelection(f,true);
                 if(!TextUtils.isEmpty(et_stc.getText().toString().replace("\n","").replace(" ",""))) { btn_tsl.performClick(); }

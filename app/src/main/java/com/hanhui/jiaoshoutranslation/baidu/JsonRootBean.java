@@ -2,6 +2,9 @@
   * Copyright 2018 bejson.com 
   */
 package com.hanhui.jiaoshoutranslation.baidu;
+import android.util.Log;
+
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -14,7 +17,7 @@ public class JsonRootBean {
 
     private String from;
     private String to;
-    private List<Trans_result> trans_result;
+    private List<Trans_result> trans_result = new ArrayList<>();
     public void setFrom(String from) {
          this.from = from;
      }
@@ -33,6 +36,7 @@ public class JsonRootBean {
          this.trans_result = trans_result;
      }
      public List<Trans_result> getTrans_result() {
+         // Log.e("jsonbean", "getTrans_result: 调用成功");
          return trans_result;
      }
 

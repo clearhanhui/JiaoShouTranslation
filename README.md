@@ -22,3 +22,6 @@ This is 2017 summer internship program, a dictionary based on Kingsoft PowerWord
 
 ![1](https://github.com/forphan/pic/blob/master/JiaoShouTransaction/transla.jpg)
 ![2](https://github.com/forphan/pic/blob/master/JiaoShouTransaction/menu.jpg)
+
+---
+2019.9更新 修复了双击翻译按钮闪退bug

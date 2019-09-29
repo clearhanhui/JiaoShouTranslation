@@ -51,17 +51,17 @@ android:id="@+id/reference_drawer">
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="软件数据来源：金山 百度 CNN"/>
+            android:text="软件数据来源：金山、百度、CNN"/>
         <TextView
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="有问题请联系bnuhan@qq.com"/>
+            android:text="有问题请联系bnuhan@163.com"/>
         <TextView
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2018-7-26"/>
+            android:text="2019年9月"/>
     </LinearLayout>
 
     <LinearLayout
